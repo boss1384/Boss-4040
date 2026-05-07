@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Alert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Price Alert</h1>
+        
+        <div class="input-group">
+            <label>From</label>
+            <select id="from">
+                <option value="LOS">Lagos (LOS)</option>
+                <option value="ABV">Abuja (ABV)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>To</label>
+            <select id="to">
+                <option value="ABV">Abuja (ABV)</option>
+                <option value="LOS">Lagos (LOS)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Travel Date</label>
+            <input type="date" id="date">
+        </div>
+
+        <button onclick="checkPrice()">Check Price</button>
+        
+        <div id="result" class="price-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
